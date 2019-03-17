@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: hiQNV8hDF4aRjm7Fs6yoBiwb8L4oVIQke1SbBJt7JaqPyMmXTpm3+vuG5lrvWhaZ5MqdgrfOIKhbIFVIJZk3uclQi4oXef6kC/SADLzVLi/QyqmCs5w+P1Kc4z4uLFGz0OkQX1CT7+cXcRUSJ9hI+KMZuj0KyxMryfGg4pzSgS3UWh7Brjcmaqz0AUXPhpnZTdchh5DE6ZuzsIApDIX6dd91zNrVh4AcC01pF/uln/+sNV8/d/R2Dh2Ebw/OjwUVV0brQflBX73OdoZ4QG7gPK0uRoVi0d/25KR6fKopO5byi8usO9Px5oak+Vcb8ELFL4/INXHRd0HKAHtvEQdZ/XogyNfeLq+IptceB8YdaScjhZwPXnTlQPqSu9f8mvu8IHTGAS36Q2FRnx0ZTNouGAbJEynBhaJnlSur5IcDLCbQ/Gkyq4SCY07PfcBKao28DhfTwWaToyYxtc0OJnCfsuGEP8cyp843UvWH64HJitRWFPb5HRxwNmpKGfmj5z4sryt1PPgsxefNiDJDKDub9yCaRVWdLmbjHoW3bYMcHT4hXmOXIAQ2DLSbqy6QQ22m9h4xwmUHEsrnxBbwL2IqHqbGp/OgmxR1ZefcXgLaGTD0BTOEHHvXmHR45/sPTtBECGQdsktL40uJf3Lr6C6r7XV1E0MTIQIAUB/FNMSyDrw=
+  app: quiet-harbor-55294
+  on:
+    repo: MissyM2/react-trello-testing
